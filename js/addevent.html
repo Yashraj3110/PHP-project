@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- event listener -->
+    <button id="btn1" >click</button>
+    <br><br> <hr>
+
+    <button id="inc" >+</button>
+    <span id="res">0</span>
+    <button id="dec" >-</button>
+    
+
+    <script>
+        // click
+        function t(a) {
+            console.log("hello "+a);
+           
+        }
+        document.getElementById('btn1').addEventListener('click',()=>{t('yash')})
+
+        let a =0;
+        function inc() {
+            a++;
+            document.getElementById('res').innerText=a
+        }
+        function dec() {
+            a--;
+            document.getElementById('res').innerText=a
+        }
+        document.getElementById('inc').addEventListener('click',inc)
+        
+        document.getElementById('dec').addEventListener('click',dec)
+
+    </script>
+</body>
+</html>
